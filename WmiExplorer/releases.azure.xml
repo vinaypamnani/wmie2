@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">WMI Explorer</title>
+  <id>https://github.com/vinaypamnani/wmie2/releases</id>
+  <updated>2017-10-05T00:00:00Z</updated>
+  <author>
+    <name>Vinay Pamnani</name>
+  </author>
+  <entry>
+    <id>https://github.com/vinaypamnani/wmie2/releases</id>
+    <title type="text">2.0.0.2</title>
+    <updated>2017-10-05T00:00:00Z</updated>
+    <link rel="alternate" href="https://github.com/vinaypamnani/wmie2/releases" />
+    <link rel="related" href="http://wmie.azurewebsites.net/changelog.txt" />
+    <category term="Stable" />
+  </entry>
+</feed>
