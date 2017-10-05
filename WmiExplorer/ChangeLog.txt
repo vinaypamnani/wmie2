@@ -1,0 +1,30 @@
+﻿Version 2.0.0.2 [10-05-2017]
+
+  * Migration to GitHub.
+
+Version 2.0.0.0 [10-27-2014]
+
+ * New: Asynchronous mode for enumeration of classes and instances in the background.
+ * New: Method execution.
+ * New: SMS (System Center Configuration Manager) Mode.
+ * New: Property tab showing properties of selected class.
+ * New: Input & Output parameter information in Methods tab with Help information.
+ * New: List View output mode for Query Results.
+ * New: Update Notifications when a new version of WMI Explorer is available.
+ * New: Connect to multiple computers at the same time.
+ * New: Quick Filter for Classes and Instances.
+ * New: User Preferences.
+ * New: View WMI Provider Process Information.
+ * Improved: UI display on higher scaling levels and resolution.
+ * Improved: Connect As option to provide alternate credentials.
+ * Improved: Display of embedded object names in Property Grid.
+
+
+Version 1.0.0.8 [01-07-2014]
+
+ * BugFix: Fixed a crash that occurs due to use of incorrectly displayed right-click context menu when no items are selected in Class/Instance list view.
+
+
+Version 1.0.0.7 [01-07-2014]
+
+ * Initial Release.
