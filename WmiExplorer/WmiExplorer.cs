@@ -1618,6 +1618,7 @@ namespace WmiExplorer
         private void WmiExplorer_Load(object sender, EventArgs e)
         {
             InitializeForm();
+            ProcessCommandLineArgs();
         }
     }
 }

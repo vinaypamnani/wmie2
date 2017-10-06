@@ -1746,6 +1746,17 @@ namespace WmiExplorer
             SetStatusBar2(String.Empty, MessageCategory.Error);
         }
 
+        private void ProcessCommandLineArgs()
+        {
+            string[] args = Environment.GetCommandLineArgs();
+
+            if (args.Length == 2)
+            {
+                textBoxComputerName.Text = args[1].ToString();
+                buttonComputerConnect.PerformClick();
+            }
+        }
+
         private void PopulateClassProperties(WmiClass wmiClass)
         {
             ResetListClassProperties();
