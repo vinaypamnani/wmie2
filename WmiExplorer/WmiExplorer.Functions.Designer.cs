@@ -1585,6 +1585,8 @@ namespace WmiExplorer
             // Log current display DPI setting
             Log("Display DPI Settings: " + DisplayDpi.ToString(CultureInfo.InvariantCulture) + "dpi");
 
+            Text = "WMI Explorer " + Assembly.GetEntryAssembly().GetName().Version.ToString();
+
 #if DEBUG
             Text = "WMI Explorer (Beta Debug Build)";
 #endif
