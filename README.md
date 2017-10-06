@@ -1,3 +1,6 @@
+# Download: https://git.io/wmie2
+
+
 WMI Explorer is a utility intended to provide the ability to browse and view WMI namespaces/classes/instances/properties in a single pane of view and is inspired by the PowerShell based WMI Explorer written by Marc.
 
 As someone who works with Configuration Manager (SCCM), I spend a lot of time in wbemtest trying to find things which is very time consuming. I started this project with the intention to combine the features of currently available WMI Explorers, and to make it easier and quicker to find what you're looking for in WMI.
