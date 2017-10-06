@@ -1,7 +1,8 @@
 ﻿Version 2.0.0.2 [10-05-2017]
 
   * Migration to GitHub.
-  * Added option to specify COMPUTERNAME as a parameter and automatically connect, Example: WmiExplorer.exe COMPUTERNAME.
+  * Added option to specify COMPUTERNAME as a parameter and automatically connect.
+      Example: WmiExplorer.exe COMPUTERNAME
 
 Version 2.0.0.0 [10-27-2014]
 
