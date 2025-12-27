@@ -1217,8 +1217,14 @@ namespace WmiExplorer
             script.Append("Write-Output \"CLASS    : $classname \"").AppendLine();
             script.Append("Write-Output \"=====================================\"").AppendLine();
             script.AppendLine();
-            script.Append("Get-WmiObject -Class $classname -ComputerName $computer -Namespace $namespace |").AppendLine();
-            script.Append("    Select-Object * -ExcludeProperty PSComputerName, Scope, Path, Options, ClassPath, Properties, SystemProperties, Qualifiers, Site, Container |").AppendLine();
+            script.Append("# Powershell 2.0+ Deprecated from 3.0+").AppendLine();
+            script.Append("# Get-WmiObject -Class $classname -ComputerName $computer -Namespace $namespace |").AppendLine();
+            script.Append("#    Select-Object * -ExcludeProperty PSComputerName, Scope, Path, Options, ClassPath, Properties, SystemProperties, Qualifiers, Site, Container |").AppendLine();
+            script.Append("#    Format-List -Property [a-z]*").AppendLine();
+            script.AppendLine();
+            script.Append("# Powershell 3.0+").AppendLine();
+            script.Append("Get-CimInstance -ClassName $classname -ComputerName $computer -Namespace $namespace |").AppendLine();
+            script.Append("    Select-Object * -ExcludeProperty PSComputerName, PSShowComputerName, CimClass, CimInstanceProperties, CimInstanceProperties, CimSystemProperties |").AppendLine();
             script.Append("    Format-List -Property [a-z]*").AppendLine();
 
             textBoxScript.Text = script.ToString();
